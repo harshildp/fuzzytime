@@ -1,10 +1,10 @@
-Time Ago 
+Time Ago - Fuzzy Timestamp Generator
 ~~~~~~~~~~~~~~~~~~~~~~
 To use, simply type:
 
-from time-ago import *
+from time_ago import *
 
-print time-ago.timeago(x)
+print timeago(x)
 
 
 For something more ridiculous try:
