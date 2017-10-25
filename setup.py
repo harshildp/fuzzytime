@@ -4,12 +4,12 @@ def readme():
     with open('README.rst') as r:
         return r.read()
 
-setup(name='time_ago',
+setup(name='fuzzytime',
       version='1.0',
       description='Turns input datetime into fuzzy timestamp format',
       keywords='date time datetime timeago fuzzy',
-      url='https://github.com/harshildp/time_ago',
+      url='https://github.com/harshildp/fuzzytime',
       author='Harshil P.',
       author_email='harshilp@uw.edu',
-      packages=['time_ago'],
+      packages=['fuzzytime'],
       zip_safe=False)

@@ -1,11 +1,13 @@
-Time Ago - Fuzzy Timestamp Generator
+fuzzytime - Fuzzy Timestamp Generator
 ~~~~~~~~~~~~~~~~~~~~~~
 To use, simply type:
 
-from time_ago import *
+from fuzzytime import *
 
-print timeago(x)
+print fuzzytime(x)
 
+Where, 'x' can be a datetime, date, time, epoch (int/float), or Str input containing date input 
+separated by '/' or '-' ex. YYYY/MM/DD or YYYY-MM-DD or time input separated by ':' ex. HH:MM:SS.
 
 For something more ridiculous try:
 
