@@ -76,3 +76,52 @@ def string_to_time (t_str):
         return time(int(t_arr[0]), int(t_arr[1]), int(t_arr[2]))
     except:
         return None
+
+def fuzzy (key, input, ref):
+    fuzzy = {
+        'future': {
+            '10': 'imminently',
+            '60': 'in {} seconds'.format(input),
+            '120': 'in a minute',
+            '1500': 'in {} minutes'.format(input/60),
+            '2100': 'in a half hour',
+            '3600': 'in {} minutes'.format(input/60),
+            '7200': 'in an hour',
+            '86400': 'in {} hours'.format(input/3600),            
+            '2': 'tomorrow',
+            '7': 'in {} days'.format(input),
+            '14': 'in a week',
+            '30': 'in {} weeks'.format(input/7),
+            '60': 'in a month',
+            '365': 'in {} months'.format(input/30),
+            '730': 'in a year',
+            '3649': 'in {} years'.format(input/365),
+            '4015': 'in a decade',
+            '36499':'in {} years'.format(input/365),
+            '36865':'in a century',
+            'inf':'in {} years'.format(input/365)
+        },
+        'past':{
+            '10': 'just now',
+            '60': '{} seconds ago'.format(input),
+            '120': 'a minute ago',
+            '1500': '{} minutes ago'.format(input/60),
+            '2100': 'a half hour ago',
+            '3600': '{} minutes ago'.format(input/60),
+            '7200': 'an hour ago',
+            '86400': '{} hours ago'.format(input/3600),
+            '2': 'yesterday',
+            '7': '{} days ago'.format(input),
+            '14': 'a week ago',
+            '30': '{} weeks ago'.format(input/7),
+            '60': 'a month ago',
+            '365': '{} months ago'.format(input/30),
+            '730': 'a year ago',
+            '3649': '{} years ago'.format(input/365),
+            '4015': 'a decade ago',
+            '36499':'{} years ago'.format(input/365),
+            '36865':'a century ago',
+            'inf':'{} years ago'.format(input/365)
+        }
+    }
+    return fuzzy[ref][key]

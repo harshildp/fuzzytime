@@ -5,7 +5,7 @@ def readme():
         return r.read()
 
 setup(name='fuzzytime',
-      version='1.0',
+      version='1.1',
       description='Turns input datetime into fuzzy timestamp format',
       keywords='date time datetime timeago fuzzy',
       url='https://github.com/harshildp/fuzzytime',
