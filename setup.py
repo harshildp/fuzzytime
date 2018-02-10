@@ -1,7 +1,7 @@
 from setuptools import setup
 
 def readme():
-    with open('README.rst') as r:
+    with open('README.md') as r:
         return r.read()
 
 setup(name='fuzzytime',
