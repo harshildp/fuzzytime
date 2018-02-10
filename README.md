@@ -4,7 +4,7 @@ A published pip module that converts a datetime object, time object, date object
 
 ## Prerequisites
 
-Python2+ and Pip
+Python2 and Pip
 
 ## Installing
 
