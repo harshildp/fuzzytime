@@ -26,7 +26,7 @@ To use, simply type::
 
   from fuzzytime import \*
 
-The functions you can utilize are fuzzytime(x), secondsago(x) and minutesago(x). To call them, type in the name and pass a single variable *x* of type datetime, time, date, string or epoch int. Note\: Strings dates can be in the format YYYY/MM/DD or YYYY-MM-DD whereas time strings must be in the format HH\:MM\:SS. For example::
+The functions you can utilize are fuzzytime\(x), secondsago(x) and minutesago(x). To call them, type in the name and pass a single variable *x* of type datetime, time, date, string or epoch int. Note\: Strings dates can be in the format YYYY/MM/DD or YYYY\-MM\-DD whereas time strings must be in the format HH\:MM\:SS. For example::
   x = "2017/12/12"
   print fuzzytime(x) \# Should output the time difference between today and Dec. 12th, 2017 in the form of a string
 
