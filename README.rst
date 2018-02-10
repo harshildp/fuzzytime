@@ -1,19 +1,23 @@
+====================
 Fuzzytime Pip Module
 ====================
 
 A published pip module that converts a datetime object, time object, date object, epoch int or date/time string into a fuzzy timestamp such as "just now", "about 5 minutes ago" or "about an hour ago". This module also works for future dates giving an output such as "in five minutes". The latest version of the module utilizes a binary search algorithm to speed up the overall process. Although miniscule, the difference is felt when a large number of consecutive operations are conducted.
 
+-------------
 Prerequisites
 -------------
 
-Python2\+ and Pip
+Python2+ and Pip
 
+----------
 Installing
 ----------
 
 To install from the command line interface, simply type::
   pip install fuzzytime
 
+------
 To Use
 ------
 
